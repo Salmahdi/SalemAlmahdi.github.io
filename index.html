@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.png">
+    <title>SALEM ALMAHDI Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/b3ef9939ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. -->
+    <div id="header">
+      <div class="container">
+        <!-- The <nav> tag defines a set of navigation links. -->
+        <nav>
+          <!-- <img src="images/logo.png" class="logo"> -->
+          <!-- The <ul> tag defines an unordered (bulleted) list. -->
+          <ul id="sidemenue">
+            <!-- Use the <ul> tag together with the <li> tag to create unordered lists. -->
+            <li><a href="#header" onclick="closemenue()">Home</a></li>
+            <li><a href="#about" onclick="closemenue()">About</a></li>
+            <li><a href="#services" onclick="closemenue()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenue()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenue()">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenue()"></i>
+        </nav>
+        <div class="header_text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span> SALEM ALMAHDI</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------about-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-column-1">
+            <!-- <img src="images/Software-Developer.png"> -->
+          </div>
+          <div class="about-column-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a Software Engineer and Full stack developer, I design and
+              build mobile applications and websites with high performances and
+              friendly UI/UX
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>UI/UX</span><br />Building Android/Ios Apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - current</span><br />Freelancer full stack
+                  developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Bachelor's degree, Software Engineering
+                  Yunnan University, Kunming, China
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Services------------------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I will convert your idea into real website, and solve your problem
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>UI/UX Design</h2>
+            <p>I will design your mobile application or your website UI/UX</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>App Design</h2>
+            <p>
+              I will convert your idea into real mobile application, and realese
+              the appliction in all stores
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------portfolio--------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpg" alt="" />
+            <div class="layer">
+              <h3>OCR APP</h3>
+              <p>
+                Optical character recognition or optical character reader is the
+                electronic or mechanical conversion of images of typed,
+                handwritten or printed text into machine-encoded text.
+              </p>
+              <a href="https://appgallery.huawei.com/app/C107670009"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.jpg" alt="" />
+            <div class="layer">
+              <h3>RPS Game</h3>
+              <p>
+                RPS Game (Rock Paper Scissors) is simple RPS challenge on the
+                mobile phone and tablet, easy and fast and interesting game to
+                challenge your friend in RPS using the mobile phone.
+              </p>
+              <a href="https://appgallery.huawei.com/app/C107466997?sharePrepath=ag&locale=en_GB&source=appshare&subsource=C107466997&shareTo=com.android.bluetooth&shareFrom=appmarket&shareIds=45845425ffd242b58df8dfa8212433b3_com.android.bluetooth&callType=SHARE"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpg" alt="" />
+            <div class="layer">
+              <h3>Dr Driving KSA</h3>
+              <p>
+                The best application for RTA test where the application provides
+                a complete set of information organized to help you qualify for
+                the test and get the driving license.
+              </p>
+              <a href="https://apps.apple.com/us/app/dr-driving-ksa/id6448671681"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="https://www.youtube.com/@salemalmahdi/featured"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-- -----------------------------contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>sa.01.swe@gmail.com</p>
+            <!-- <p>+966 50 418 6383</p> -->
+            <div class="social-icons">
+              <a href="https://www.instagram.com/sadev01/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/salemalmahdi/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://wa.me/0504186383"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+
+            <a href="images/SALEM ALMAHDI-CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------about section Script ----------------- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- -----------------------------sidemenue---------------- -->
+
+    <script>
+      var sidemenue = document.getElementById("sidemenue");
+      function openmenue() {
+        sidemenue.style.right = "0";
+      }
+      function closemenue() {
+        sidemenue.style.right = "-200px";
+      }
+    </script>
+
+    <!-- -----------contact form -------------------- -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyS_qKUVLOtJ4wsY7R0lOzpG33fUnrgMxUzNGc6NDcY5WcZI-ahL_800LnBO_O4vCF9/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
